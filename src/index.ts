@@ -10,7 +10,8 @@ class Product {
   price: number;
 
   static findProductsBelow(preciobase: number) {
-    return products.filter((item) => item.price < preciobase);
+    const nuevoArray = products.filter((item) => item.price < preciobase);
+    return nuevoArray;
   }
 }
 
